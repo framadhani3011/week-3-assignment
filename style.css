@@ -28,7 +28,7 @@ nav > div {
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(255, 128, 128);
-    transition: background-color 1s
+    transition: background-color 1s;
 }
 
 nav > div:hover {
@@ -38,7 +38,6 @@ nav > div:hover {
 img {
     width: 200px;
     height: auto;
-    max-height: 100px;
 }
 
 header {
@@ -56,8 +55,27 @@ header > img {
 }
 
 .grid-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 75px);
+}
+
+.ayam-betutu {
+    grid-area: 1/1/span 2/span 2;
+    
+}
+
+.ukrainian-borscht {
+    grid-area: 1/3;
+}
+
+.korean-bibimbap {
+    grid-area: 2/3;
+}
+
+.swedish-kottbullar {
+    grid-area: 2/1;
 }
 
 section {
